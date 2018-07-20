@@ -1,0 +1,128 @@
+@media screen and (max-width: 979px)
+	body 
+		margin-top: 0;
+  .top
+    border-radius: 0
+    background-size: cover;
+	
+	ul.help 
+		justify-content: center;
+	
+ header.main_header nav ul.main_nav 
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	margin-top: 7px;
+  margin-right: 50px
+  li 
+ 	 margin: 5px 5px;
+ 
+ .articles 
+ 	display: block;
+  main 
+  	width: 100%
+   .slide
+    background-size: cover;
+   .main_articles
+    margin-left: 30px
+    margin-right: 30px
+    article.main_article
+      text-align: center
+
+  aside 
+   width: 100%;
+ 	 display: grid;
+ 	 grid-template-columns: repeat(3, 1fr);
+ 	 padding: 0;
+   h2 
+ 	  grid-column-start: 1;
+ 	  grid-column-end: 4;
+   article.aside_article 
+ 	  margin: 15px;
+ 
+ footer 
+ 	margin: 50px 0;
+ 	display: flex;
+ 	justify-content: center;
+
+@media screen and (max-width: 840px)
+ .articles main .main_articles
+  margin-left: 0
+  margin-right: 0
+
+
+
+ 
+@media screen and (max-width: 758px) 
+ .top span 
+ 	margin-left: 100px;
+ 
+ .top_header header.main_header .main_nav 
+ 	padding: 0;
+  margin-left: 10px
+  margin-right: 10px
+ 
+ .top p 
+ 	line-height: 1;
+ 
+ header.main_header 
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+  
+ .articles main .article_header 
+  flex-wrap: wrap;
+  h2
+    padding-bottom: 8px
+  p 
+   padding-left: 30px
+ 
+ .articles main .slide p 
+ 	top: 30%;
+ 	width: 60%;
+ 
+ .articles main .main_articles 
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: stretch
+  justify-content: space-around;
+ 
+ .articles main .main_articles article.main_article 
+ 	width: 40%;
+ 	font-size: 1.5rem;
+  margin: 7.5px
+  &:first-child 
+   margin-left: 7.5px;
+  &:last-child 
+   margin-right: 7.5px;
+  
+
+  .articles main article.main_article span 
+  	bottom: 15px;
+  	height: 15px;
+  
+  .articles main .big_article 
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+
+  
+  .articles aside span.talk 
+  	padding-bottom: 20px;
+
+
+
+
+@media screen and (max-width: 460px)
+  .articles main .article_header h2 
+    font-size: 1.2rem;
+  .articles main div.main_articles article.main_article
+    width: 80%
+  .articles main .big_article 
+    display: block;
+    text-align: center;
+  .articles aside 
+    display: block;
+    text-align: center
+    .aside_article
+      width: 80%
+ 
+

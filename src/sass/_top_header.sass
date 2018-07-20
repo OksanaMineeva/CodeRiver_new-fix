@@ -1,0 +1,82 @@
+.top
+	display: flex
+	border-radius: 5px 5px 0 0
+	background: #f5f5f5 url(../img/top.jpg) repeat-x
+	padding: 10px 32px 10px
+	align-items: center
+
+.link-top
+	display: flex
+	text-decoration: none
+	&_btn
+		padding: 1px 4px
+		background-color: #85afbd
+		border-radius: 2px
+		text-transform: uppercase
+		+font-decor
+		color: white
+		font-size: 14px
+ &_header
+ 	color: #757575
+ 	+font-main_italic
+  font-size: 11px
+  line-height: 18px
+  padding-left: 11px
+  padding-top: 2px
+
+.link-top:hover
+	.link-top_btn
+		background-color: $color-decoration
+	.link-top_header
+		text-decoration: underline
+
+.icon
+	padding-left: 10px
+
+.search
+	position: absolute
+	top: center
+	right: 34%
+	transition: right 1s easy
+
+.arrow
+ background: transparent url(../img/arrow.png) no-repeat
+ height: 10px
+
+ 
+.header 
+	background: #1a303d url(../img/main_header.png) no-repeat
+	background-size: cover
+	display: flex
+
+.logo 
+	padding: 28px 39px 25px 30px
+	height: 129px
+	width: 215px
+
+.navigation
+	margin: 25px 0;
+	+font-decor
+	
+.help-nav
+	display: flex;
+ &_item
+ 	padding-right: 11px;
+	 color: #a6a6a6;
+	 text-transform: uppercase;
+	 font-size: 14px;
+		&:hover
+			text-decoration: underline
+			
+.main-nav 
+	margin: 14px 0 0 -13px;
+	display: flex;
+	&_item
+		padding: 5px 13px;
+		color: #f6f6f6;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 18px;
+		&:hover 
+			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1), inset 1px 1px 1px rgba(0, 0, 1, 0.28);
+			background-color: #092f3b;

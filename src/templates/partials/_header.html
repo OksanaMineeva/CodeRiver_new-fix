@@ -1,0 +1,16 @@
+<header class="header">
+	<img src="../../img/logo.png" alt="Logo"class="logo">
+	<nav class="navigation">
+		<ul class="help-nav">
+			{% import "data/help_and_main_menu_items.html" as tests %}
+			{% for test in tests.help_nav %}
+			<li><a href="#" class="help-nav_item">{{test.title}}</a></li>
+			{% endfor %}
+		</ul>
+		<ul class="main-nav">
+			{% for test in tests.main_nav %}
+			<li><a href="#" class="main-nav_item">{{test.title}}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>
