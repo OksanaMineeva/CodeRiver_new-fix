@@ -50,9 +50,9 @@
 	display: flex
 
 .logo 
-	padding: 28px 39px 25px 30px
-	height: 129px
-	width: 215px
+	margin: 28px 39px 20px 30px
+	height: 76px
+	width: 146px
 
 .navigation
 	margin: 25px 0;
@@ -60,13 +60,27 @@
 	
 .help-nav
 	display: flex;
- &_item
- 	padding-right: 11px;
-	 color: #a6a6a6;
-	 text-transform: uppercase;
-	 font-size: 14px;
-		&:hover
-			text-decoration: underline
+	&_item
+		margin-right: 11px;
+		color: #a6a6a6;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: inline-block;
+		position: relative;
+		&::before
+			display: block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 0;
+			background-color: #a6a6a6;
+			transition: width .5s ease-in-out, left .5s ease-in-out;
+			left: 50%;
+			bottom: 0;
+		&:hover::before
+			width: 100%;
+			left: 0;
+
 			
 .main-nav 
 	margin: 14px 0 0 -13px;

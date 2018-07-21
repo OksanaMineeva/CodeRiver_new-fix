@@ -8,6 +8,11 @@
 	&_link
 		color: #f6f6f6;
 		display: block
+		transition: all 3s
+		&:hover
+			text-align: center
+			text-decoration: underline
+
 
 .aside-article 
 	margin: 5px 0;
@@ -20,7 +25,7 @@
 		padding-left: 3px
 		letter-spacing: 0;
 		line-height: 1.5;
-		margin-top: 14px
+		margin-top: 2px
 	&_text
 		margin-top: 6px
 		margin-bottom: 20px
@@ -33,16 +38,16 @@
 		margin-left: 12px
 
 .preview
-	width: 100%
-	height: 186px
+	width: 186px
+	height: 172px
 	display: block
 	position: relative
 	&_img
 		z-index: 10
 	&_click
 		position: absolute
-		width: 99%
-		height: 92%
+		width: 100%
+		height: 100%
 		top: 0
 		display: flex
 		align-items: center
