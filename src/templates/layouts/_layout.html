@@ -15,13 +15,13 @@
     <!-- BEGIN content -->
     <div class="out">
       <div class="content">
-        {% block top %}{% endblock %}
-        {% block header %}{% endblock %}
+        {% include "partials/_top.html" %}
+        {% include "partials/_header.html" %}
         <div class="articles">
           {% block articles %}{% endblock %}
         </div>
         <footer class="footer">
-          {% block footer %}{% endblock %}
+          <img src="img/footer_img.png" alt="Layman">
         </footer>
       </div>
     </div> <!-- end out -->

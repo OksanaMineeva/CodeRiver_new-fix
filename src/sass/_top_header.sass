@@ -4,11 +4,15 @@
 	background: #f5f5f5 url(../img/top.jpg) repeat-x
 	padding: 10px 32px 10px
 	align-items: center
+	+r(1020)
+		border-radius: 0
+	+r(520)
+		background-size: cover
 
-.link-top
+.link
 	display: flex
 	text-decoration: none
-	&_btn
+	&__btn
 		padding: 1px 4px
 		background-color: #85afbd
 		border-radius: 2px
@@ -16,19 +20,18 @@
 		+font-decor
 		color: white
 		font-size: 14px
- &_header
- 	color: #757575
- 	+font-main_italic
-  font-size: 11px
-  line-height: 18px
-  padding-left: 11px
-  padding-top: 2px
-
-.link-top:hover
-	.link-top_btn
-		background-color: $color-decoration
-	.link-top_header
-		text-decoration: underline
+	&__header
+		color: #757575
+		+font-main_italic
+		font-size: 11px
+		line-height: 18px
+		padding-left: 11px
+		padding-top: 2px
+	&:hover 
+		.link__btn
+			background-color: $color-decoration
+		.link__header
+			text-decoration: underline
 
 .icon
 	padding-left: 10px
@@ -37,8 +40,11 @@
 	position: absolute
 	top: center
 	right: 34%
-	transition: right 1s easy
-
+	+r(860)
+		right: 20%
+	+r(670)
+		display: none
+	
 .arrow
  background: transparent url(../img/arrow.png) no-repeat
  height: 10px
@@ -48,49 +54,61 @@
 	background: #1a303d url(../img/main_header.png) no-repeat
 	background-size: cover
 	display: flex
+	+r(600)
+		flex-wrap: wrap
+		justify-content: center
 
 .logo 
 	margin: 28px 39px 20px 30px
 	height: 76px
 	width: 146px
+	+r(600)
+		margin-bottom: 0
 
 .navigation
-	margin: 25px 0;
+	margin: 25px 0
 	+font-decor
 	
 .help-nav
-	display: flex;
-	&_item
-		margin-right: 11px;
-		color: #a6a6a6;
-		text-transform: uppercase;
-		font-size: 14px;
-		display: inline-block;
-		position: relative;
+	display: flex
+	+r(900)
+		justify-content: center
+	&__item
+		margin-right: 11px
+		color: #a6a6a6
+		text-transform: uppercase
+		font-size: 14px
+		display: inline-block
+		position: relative
 		&::before
-			display: block;
-			position: absolute;
-			content: "";
-			height: 2px;
-			width: 0;
-			background-color: #a6a6a6;
-			transition: width .5s ease-in-out, left .5s ease-in-out;
-			left: 50%;
-			bottom: 0;
+			display: block
+			position: absolute
+			content: ""
+			height: 2px
+			width: 0
+			background-color: #a6a6a6
+			transition: width .5s ease-in-out, left .5s ease-in-out
+			left: 50%
+			bottom: 0
 		&:hover::before
-			width: 100%;
-			left: 0;
+			width: 100%
+			left: 0
 
 			
 .main-nav 
-	margin: 14px 0 0 -13px;
-	display: flex;
-	&_item
-		padding: 5px 13px;
-		color: #f6f6f6;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-size: 18px;
+	margin: 14px 0 0 -13px
+	display: flex
+	+r(900)
+		justify-content: center
+		flex-wrap: wrap
+	&__item
+		padding: 5px 13px
+		color: #f6f6f6
+		text-transform: uppercase
+		text-decoration: none
+		font-size: 18px
+		+r(540)
+			padding: 3px 10px
 		&:hover 
-			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1), inset 1px 1px 1px rgba(0, 0, 1, 0.28);
-			background-color: #092f3b;
+			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1), inset 1px 1px 1px rgba(0, 0, 1, 0.28)
+			background-color: #092f3b

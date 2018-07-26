@@ -1,141 +1,183 @@
 .article-heading
-	display: flex;
-	&_head
+	display: flex
+	+r(770)
+		flex-wrap: wrap
+	&__head
 		+font-decor
 		background: $color-decoration
-		border-radius: 3px 0 0 3px;
-		padding: 5px 32px 0 12px;
-		position: relative;
-		color: #f6f6f6;
+		border-radius: 3px 0 0 3px
+		padding: 5px 32px 9px 12px
+		position: relative
+		color: #f6f6f6
 		font-size: 18px
-		text-transform: uppercase;
+		line-height: 22px
+		text-transform: uppercase
+		+r(770)
+			height: 33px
+		+r(450)
+			padding-right: 10px
+			font-size: 14px
 		&::after 
-			content: ''; 
-			position: absolute; 
-			right: -37px; top: 0;  
-			border: 16px solid transparent; 
-			border-left: 21px solid $color-decoration
-	&_text
+			content: ''
+			position: absolute
+			right: -37px 
+			top: 0 
+			border: 18px solid transparent
+			border-left: 20px solid $color-decoration
+			+r(450)
+				display: none
+	&__text
 		+font-main_normal
 		color: #757575
-		background-color: #cacaca;
-		flex: 1 1 auto;
-		padding: 8px 0 11px 37px;
-		border-radius: 0 3px 3px 0;
-		letter-spacing: 0px;
-		font-size: 12px;
+		background-color: #cacaca
+		flex: 1 1 auto
+		padding: 8px 0 11px 37px
+		border-radius: 0 3px 3px 0
+		letter-spacing: 0px
+		font-size: 12px
+		line-height: 16px
+		+r(770)
+			padding-left: 10px
+			padding-right: 10px
+			font-size: 11px
 
 .slider
-	margin-top: 5px
-	height: 256px;
-	background: #eec38f url(../img/slide.jpg) no-repeat 65% 13%;
-	border-radius: 3px;
-	position: relative;
-	&_text
-		position: absolute;
-		top: 42%;
-		left: 5%;
-		width: 47%;
-		background-color: #1e1e1e;
-		padding: 20px 20px;
-		color: white;
-		font-family: Georgia;
-		font-weight: 400;
-		line-height: 18px;
-		letter-spacing: 0.1px;
+	margin-top: 4px
+	height: 256px
+	background: #eec38f url(../img/slide.jpg) no-repeat 65% 13%
+	border-radius: 3px
+	position: relative
+	+r(1020)
+		background-size: cover
+	&__text
+		position: absolute
+		top: 42%
+		left: 5%
+		width: 47%
+		background-color: #1e1e1e
+		padding: 19px 20px
+		color: white
+		font-family: Georgia
+		font-weight: 400
+		line-height: 18px
+		letter-spacing: 0.1px
+		+r(540)
+			top: 20%
+			left: 20%
+			width: 60%
 
-.main_articles 
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+
+.main-articles 
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
 	margin-top: 15px
-	margin-bottom: 45px;
+	margin-bottom: 45px
+	+r(763)
+		grid-template-columns: repeat(2, 1fr)
+	+r(400)
+		display: flex
+		flex-direction: column
+		align-items: center
 
 .article-link
 	border-radius: 5px
-	padding: 16px;
+	padding: 16px
 	padding-bottom: 7px
-	background-color: white;
-	margin-right: 16px;
-	position: relative;
+	background-color: white
+	margin-right: 16px
+	position: relative
 	box-shadow: 2px 2px 2px rgba(0,0,0,.2)
+	+r(1020)
+		width: 170px
+		margin: 0 auto
+	+r(763)
+		width: 230px
+		margin-top: 20px
+	+r(540)
+		width: 220px
 	&:hover
 		transform: scale(1.5,1.5)
 		z-index: 1
-
+		+r(1020)
+			transform: scale(1,1)
 	&:last-child 
-		margin-right: 0;
+		margin-right: 0
+		+r(1020)
+			margin: 0 auto
+		+r(763)
+			margin-top: 20px
 
 .main-article
-	&_img
+	&__img
 		width: 137px
 		height: 117px
-	&_head
-		margin: 12px 0 7px 2px;
-		color: #042b38;
+		+r(1020)
+			width: 100%
+	&__head
+		margin: 10px 0 7px 2px
+		color: #042b38
 		+font-main_normal
 		font-size: 12px
-		line-height: 1.5;
-		text-decoration: underline;
-	&_text
-		margin: 0 0 10px 2px;
-		color: #757575;
+		line-height: 1.5
+		text-decoration: underline
+	&__text
+		margin: 0 0 10px 2px
+		color: #757575
 		+font-main_italic
-		font-size: 11px;
-		line-height: 18px;
+		font-size: 11px
+		line-height: 18px
 		padding-right: 15px
- &_talk
-		position: absolute;
-		bottom: 1px;
-		right: 13px;
+	&__comments
+		position: absolute
+		bottom: 0
+		right: 14px
 
 
 .big-article 
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	margin: 26px 0 20px;
-	&_img
+	display: grid
+	grid-template-columns: 1fr 3fr
+	margin: 24px 0 20px
+	+r(513)
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__img
 		width: 168px
 		height: 130px
-	&_info 
-		font-family: Georgia, serif;
-		color: #757575;
-		font-family: Georgia;
-		font-weight: 400;
-		line-height: 18px;
+		+r(513)
+			margin-bottom: 20px
+	&__info 
+		+font-main_normal
+		color: #757575
+		line-height: 18px
 		margin: 9px 0 13px 15px
 
 .socials
-	margin-top: 19px;
-	display: flex;
+	margin-top: 19px
+	display: flex
 
 .tags 
-		margin-left: 26px;
-		&_link
-			text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-   color: #2b5e5e;
-   font-style: italic;
-   text-decoration: underline
-   &:first-child
-   	padding-left: 7px
+	margin-left: 26px
+	&__link
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3)
+		color: #2b5e5e
+		font-style: italic
+		text-decoration: underline
+		&:first-child
+			padding-left: 7px
 
 .share 
-		display: flex;
-		margin-left: 32px
-		&_icon 
-			margin-left: 11px;
-			padding-left: 20px;
-			&:hover
-				transform: scale(1.5,1.5)
-
+	display: flex
+	margin-left: 32px
+	&__icon 
+		margin-left: 11px
+		padding-left: 20px
+		&:hover
+			transform: scale(1.5,1.5)
+			+r(540)
+				transform: scale(1,1)
 .facebook 
- background: transparent url(../img/facebook.png) no-repeat;
+	background: transparent url(../img/facebook.png) no-repeat
 .twitter
- background: transparent url(../img/twit.png) no-repeat;
+	background: transparent url(../img/twit.png) no-repeat
  margin-left: 0
-						 
-
-
-	
-
-		
-

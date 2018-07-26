@@ -1,40 +1,58 @@
 .aside-heading
-	background-color: $color-decoration;
-	text-transform: uppercase;
-	padding: 4px 12px 8px;
-	border-radius: 3px;
+	background-color: $color-decoration
+	text-transform: uppercase
+	padding: 4px 12px 8px
+	border-radius: 3px
 	+font-decor
-	letter-spacing: 0.15px;
-	&_link
-		color: #f6f6f6;
+	letter-spacing: 0.15px
+	&__link
+		color: #f6f6f6
 		display: block
 		transition: all 3s
 		&:hover
-			text-align: center
 			text-decoration: underline
 
-
+.aside-articles
+	+r(1020)
+		display: flex
+		justify-content: space-around
+	+r(600)
+		flex-direction: column
+		align-items: center
 .aside-article 
-	margin: 5px 0;
-	&_heading
+	margin: 22px 0
+	+r(1020)
+		max-width: 186px
+		margin-left: 20px
+	+r(600)
+		margin-left: 0
+	&:first-of-type
+		margin-top: 7px
+		+r(1020)
+			margin-top: 23px
+			margin-left: 0
+	&__heading
+		padding-top: 12px
 		display: block
-		color: #042b38;
+		color: #042b38
 		+font-main_normal
 		font-size: 12px
-		text-decoration: underline;
+		text-decoration: underline
 		padding-left: 3px
-		letter-spacing: 0;
-		line-height: 1.5;
-		margin-top: 2px
-	&_text
+		letter-spacing: 0
+		line-height: 1.5
+		margin-top: 3px
+		margin-bottom: 8px
+	&__text
 		margin-top: 6px
 		margin-bottom: 20px
-		color: #757575;
+		color: #757575
 		+font-main_italic
-		font-size: 11px;
-		line-height: 18px;
+		font-size: 11px
+		line-height: 18px
 		padding-left: 3px
-	&_talk
+		display: inline
+	&__comments
 		margin-left: 12px
 
 .preview
@@ -42,9 +60,9 @@
 	height: 172px
 	display: block
 	position: relative
-	&_img
+	&__img
 		z-index: 10
-	&_click
+	&__click
 		position: absolute
 		width: 100%
 		height: 100%
@@ -59,8 +77,5 @@
 		z-index: -1
 
 .preview:hover
-	.preview_click
+	.preview__click
 		z-index: 1
-
-
-
